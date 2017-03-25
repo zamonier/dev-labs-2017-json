@@ -1,4 +1,4 @@
-package com.luxoft;
+package com.luxoft.parsers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;

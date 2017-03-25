@@ -1,4 +1,4 @@
-package com.luxoft;
+package com.luxoft.parsers;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
