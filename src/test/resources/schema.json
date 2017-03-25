@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "All Requests Schemas",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string",
+      "minLength": 5
+    },
+    "address": {
+      "$ref": "#/definitions/address"
+    },
+    "phoneNumbers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName"
+  ],
+  "definitions": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "streetAddress": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "postalCode": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "streetAddress",
+        "city"
+      ]
+    }
+  }
+}
